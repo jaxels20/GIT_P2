@@ -2,6 +2,7 @@ library(ggplot2)
 library(distr)
 set.seed(12345)
 
+#Simulating a die
 die <- 1:6
 roll <- function(n) {
   mean(sample(die, size = n, replace = TRUE))
