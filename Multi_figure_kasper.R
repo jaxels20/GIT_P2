@@ -98,33 +98,3 @@ plot(P5, to.draw.arg="d", ylab="Probability Mass",
      inner=FALSE,
      tmar=3)
 title(main=expression(paste("Probability mass function of Poisson distribution, ", lambda, "=5")))
-
-
-B = Binom()
-plot(B)
-
-B2 = B + B
-plot(B2)
-
-B3 = B + B + B
-plot(B3)
-
-
-BE = Beta()
-plot(BE)
-
-BE2 = BE + BE
-plot(BE2)
-
-BE3 = BE + BE + BE
-plot(BE3)
-
-
-U = Unif()
-plot(U)
-
-U2 = U + U
-plot(U2)
-
-U3 = U + U + U
-plot(U3)
