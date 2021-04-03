@@ -6,7 +6,9 @@ library(Publish) #CI for mean
 
 library(TeachingDemos) #CI for variance
 
-set.seed(12345)
+library(goftest)
+
+#set.seed(12345)
 
 #This is verifying the CLT for a poisson distribution
 
@@ -45,14 +47,12 @@ abline(v=theoretical_mean, col="red", lwd=2)
 
 
 
-normal_ecdf = rnorm(1000, 0, 2)
 
-
-
-ks.test(mean_difference, pnorm)
 
 
 #Plotting the ecdf:
+
+normal_ecdf = rnorm(1000, 0, 2)
 
 plot(ecdf(normal_ecdf),  
      xlim = range(c(normal_ecdf, mean_difference)),  
@@ -62,16 +62,12 @@ plot(ecdf(mean_difference),
      lty = "dashed", 
      col = "red") 
 
-
 #Calculating confidence interval
 
 #CI_mean = ci.mean(mean_difference)
 
 
 #Ci_var = sigma.test(mean_difference)
-
-
-
 
 
 
